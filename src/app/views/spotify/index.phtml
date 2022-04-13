@@ -1,0 +1,20 @@
+<?php
+$client_id = "6a52e61a766e49379f5fa339e2370656";
+$client_secret = "c937ae1602ef41319e2408ff21f37168";
+$scope = "playlist-modify-public playlist-read-private playlist-modify-private";
+$redirect_uri = "http://localhost:8080/spotify/home";
+$url = "https://accounts.spotify.com/authorize?client_id=$client_id&response_type=code&redirect_uri=$redirect_uri&scope=$scope"
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="<?php echo $url; ?>">LOG IN</a>
+</body>
+</html>
